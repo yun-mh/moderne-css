@@ -1,0 +1,175 @@
+/* トップページ */
+
+.main {
+    width: 80%;
+    margin: auto;
+}
+
+/* メインビジュアル */
+.main--visual {
+    padding: 1.5rem 0 0 0;
+    height: 50vh;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.active:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+
+/* 商品カテゴリーグリッド */
+.main--grid {
+    padding: 3rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 45vh 45vh;
+    grid-template-areas: "first second" "first third";
+    column-gap: 2rem;
+    row-gap: 2rem;
+    justify-content: center;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+}
+
+.product--women {
+    grid-area: first;
+    background-image: url(../images/grid-women.jpg);
+    background-size: cover;
+    transition: all .5s;
+    background-position: center;
+}
+
+.modern--about {
+    grid-area: second;
+    background-image: url(../images/grid-about.jpg);
+    background-size: cover;
+    transition: all .5s;
+    background-position: center;
+}
+
+.product--men {
+    grid-area: third;
+    background-image: url(../images/grid-men.jpg);
+    background-size: cover;
+    transition: all .5s;
+}
+
+.grid--info {
+    padding: 1.5rem;
+}
+
+.grid--info__title {
+    margin-top: 0;
+}
+
+.grid--info__btn {
+    font-size: .8rem;
+    background-color: #fff;
+    border: 1px solid gray;
+    padding: .5rem 1rem;
+    text-decoration: none;
+}
+
+.grid--info__btn:hover {
+    background-color: lightgray;
+    transition: all .4s;
+}
+
+.grid--info__btn:link,
+.grid--info__btn:active,
+.grid--info__btn:visited {
+    color: #333;
+}
+
+.text-white {
+    color: white;
+}
+
+
+
