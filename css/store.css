@@ -1,0 +1,36 @@
+#map {
+    height: 70vh;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:#f7f7f7;
+    color: #333;
+}
+
+.main {
+    width: 80%;
+    margin: auto;
+}
+
+.moderne--map {
+    display: flex;
+}
+
+.moderne--map__title h2 {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.moderne--map__stores {
+    width: 20%;
+}
+
+.moderne--map__map {
+    width: 80%;
+}

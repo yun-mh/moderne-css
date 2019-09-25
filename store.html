@@ -67,7 +67,7 @@
                             </div>
                         </li>
                         <li class="header--nav__item">
-                            <a href="store.html">STORE</a>
+                            <a href="store.html" class="active__float">STORE</a>
                         </li>
                     </ul>
                 </div>
@@ -76,76 +76,21 @@
     </header>
 
     <main class="main">
-        <section class="product--list">
-            <div class="product--list__title">
-                <h2>女性用フレグランス</h2>
-            </div>
-        </section>
-
         <section>
-            <div class="product--list__item">
-                <div class="card">
-                    <div class="card__side card__side--front">
-                        <div class="card__picture card__picture--1">
-                            &nbsp;
-                        </div>
-                        <h4 class="card__heading">
-                            <span class="card__heading-span card__heading-span--1">Roseanne</span>
-                        </h4>
-                    </div>
-                    <div class="card__side card__side--back card__side--back-1">
-                        <div class="card__cta">
-                            <div class="card__price-box">
-                                <p class="card__price-value">&yen; 8,400</p>
-                            </div>
-                            <a href="" class="btn btn--white">詳細をみる</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product--list__item">
-                <div class="card">
-                    <div class="card__side card__side--front">
-                        <div class="card__picture card__picture--2">
-                            &nbsp;
-                        </div>
-                        <h4 class="card__heading">
-                            <span class="card__heading-span card__heading-span--2">LA MOUSSE</span>
-                        </h4>
-                    </div>
-                    <div class="card__side card__side--back card__side--back-2">
-                        <div class="card__cta">
-                            <div class="card__price-box">
-                                <p class="card__price-value">&yen; 7,200</p>
-                            </div>
-                            <a href="" class="btn btn--white">詳細をみる</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product--list__item">
-                <div class="card">
-                    <div class="card__side card__side--front">
-                        <div class="card__picture card__picture--3">
-                            &nbsp;
-                        </div>
-                        <h4 class="card__heading">
-                            <span class="card__heading-span card__heading-span--3">L'EAU</span>
-                        </h4>
-                    </div>
-                    <div class="card__side card__side--back card__side--back-3">
-                        <div class="card__cta">
-                            <div class="card__price-box">
-                                <p class="card__price-value">&yen; 7,000</p>
-                            </div>
-                            <a href="" class="btn btn--white">詳細をみる</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="moderne--map__title">
+                <h2>ストアリスト</h2>
             </div>
         </section>
+
+        <section class="moderne--map">
+            <div class="moderne--map__stores">
+                aaaa
+            </div>
+
+            <div class="moderne--map__map" id="map"></div>
+        </section>
+
+        
     </main>
 
     <footer class="footer">
@@ -170,9 +115,12 @@
 
     <script src="./js/shared.js"></script>
     <script src="./js/wow.min.js"></script>
+    <script src="./js/map.js"></script>
     <script>
         new WOW().init();
     </script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDE_NwkMTdCQLu3b_ZH2zMSyM_lAqNZ8u8&callback=initMap" async defer></script>
 </body>
 
 </html>
