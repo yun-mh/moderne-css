@@ -1,0 +1,38 @@
+body {
+    background-color:#f7f7f7;
+    color: #333;
+}
+
+main {
+    height: 300vh;
+    background-image: linear-gradient(to left bottom, #000000 0%, #000000 43%, #02083a 60%, #243B55 70%, #4b6481 80%, #8296ad 90%, #f7f7f7);
+}
+
+.item--visual {
+    height: 76vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: url("../images/men-item1.jpg");
+}
+
+.item--visual__box {
+    text-align: center;
+    padding: 5rem;
+}
+
+.item--visual__box div {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 0 1rem 0; 
+}
+
+.item--title {
+    font-size: 4rem;
+    color: white;
+    margin: 0 0 1rem 0;
+}
+
+.purchase-popup {
+    display: none;
+}

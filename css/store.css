@@ -20,6 +20,7 @@ body {
 
 .moderne--map {
     display: flex;
+    margin-bottom: 6rem;
 }
 
 .moderne--map__title h2 {
@@ -28,9 +29,52 @@ body {
 }
 
 .moderne--map__stores {
-    width: 20%;
+    width: 30%;
+    height: 70vh;
+    border: 1px solid #aaa;
+    overflow: auto;
+}
+
+.store {
+    padding: 2rem;
+}
+
+.store:not(:last-child) {
+    border-bottom: 1px solid #aaa;
+}
+
+.store:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.store h3 {
+    margin-top: 0;
+}
+
+.store--address {
+    font-size: .8rem;
+}
+
+.store--phone {
+    font-size: .8rem;
+    color: #777;
+}
+
+.store--time {
+    font-size: .8rem;
+    color: #777;
+}
+
+.store i {
+    display: inline-block;
+    font-size: .8rem;
+    position: relative;
+    /* Adjust these values accordingly */
+    top: 1px;
 }
 
 .moderne--map__map {
-    width: 80%;
+    width: 70%;
+    
 }

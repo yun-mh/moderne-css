@@ -3,9 +3,13 @@ var map;
 
 function initMap() {
     var moderne1 = {lat: 35.1682835, lng: 136.8858000};
+    var moderne2 = {lat: 35.6916554, lng: 139.6947481};
+    var moderne3 = {lat: 34.699875, lng: 135.4908433};
+    var moderne4 = {lat: 34.699875, lng: 135.4908433};
+
     map = new google.maps.Map(document.getElementById('map'), {
     center: moderne1,
-    zoom: 17,
+    zoom: 15,
     // zoomControl: boolean,
     mapTypeControl: false,
     // scaleControl: boolean,
@@ -226,7 +230,53 @@ function initMap() {
             }
           ]
         }
-      ]
+    ]
+  });
+
+  var locations = [
+    {lat: 35.1682835, lng: 136.8858000},
+    {lat: 35.6916554, lng: 139.6947481},
+    {lat: 34.699875, lng: 135.4908433},
+    {lat: 48.859879, lng: 2.3425283},
+  ];
+
+  var store1 = document.querySelector(".store1");
+  var store2 = document.querySelector(".store2");
+  var store3 = document.querySelector(".store3");
+  var store4 = document.querySelector(".store4");
+
+  var marker, i;
+  var icon = "./images/marker.png";
+
+  var markers = [];
+  for (i = 0; i < locations.length; i++) {  
+    marker = new google.maps.Marker({
+      id:i,
+      position: new google.maps.LatLng(locations[i].lat, locations[i].lng),
+      map: map,
+      icon: icon
     });
-    var marker = new google.maps.Marker({position: moderne1, map: map});
+    markers.push(marker);
+  }
+
+  store1.addEventListener('click', ()=>{
+    map.setZoom(15);
+    map.setCenter(markers[0].getPosition());
+  });
+
+  store2.addEventListener('click', ()=>{
+    map.setZoom(15);
+    map.setCenter(markers[1].getPosition());
+  });
+
+  store3.addEventListener('click', ()=>{
+    map.setZoom(15);
+    map.setCenter(markers[2].getPosition());
+  });
+
+  store4.addEventListener('click', ()=>{
+    map.setZoom(15);
+    map.setCenter(markers[3].getPosition());
+  }); 
 }
+

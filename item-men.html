@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>STORE | MODERNE NAGOYA</title>
+    <title>BLEU MER | MODERNE NAGOYA</title>
     <link rel="stylesheet" href="./css/shared.css">
-    <link rel="stylesheet" href="./css/store.css">
+    <link rel="stylesheet" href="./css/item.css">
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/iconmonstr-iconic-font.min.css">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
@@ -15,6 +15,14 @@
 </head>
 
 <body>
+    <div class="backdrop"></div>
+    <div class="modal">
+        <h1 class="modal__title">Do you want to continue?</h1>
+        <div class="modal__actions">
+            <a href="start-hosting/index.html" class="modal__action">Yes!</a>
+            <button class="modal__action modal__action--negative" type="button">No!</button>
+        </div>
+    </div>
     <header class="header">
         <nav class="header--nav__static">
             <h1 class="header--nav__logo">
@@ -30,7 +38,7 @@
                         <a href="about.html">ABOUT</a>
                     </li>
                     <li class="header--nav__item">
-                        <a class="dropbtn">FRAGRANCE
+                        <a class="dropbtn active__static">FRAGRANCE
                         </a>
                         <div class="dropdown-content">
                             <a href="women.html">WOMEN</a>
@@ -38,7 +46,7 @@
                         </div>
                     </li>
                     <li class="header--nav__item">
-                        <a href="store.html" class="active__static">STORE</a>
+                        <a href="store.html">STORE</a>
                     </li>
                 </ul>
             </div>
@@ -59,7 +67,7 @@
                             <a href="about.html">ABOUT</a>
                         </li>
                         <li class="header--nav__item">
-                            <a class="dropbtn-float">FRAGRANCE
+                            <a class="dropbtn-float active__float">FRAGRANCE
                             </a>
                             <div class="dropdown-content__float">
                                 <a href="women.html">WOMEN</a>
@@ -67,7 +75,7 @@
                             </div>
                         </li>
                         <li class="header--nav__item">
-                            <a href="store.html" class="active__float">STORE</a>
+                            <a href="store.html">STORE</a>
                         </li>
                     </ul>
                 </div>
@@ -76,70 +84,19 @@
     </header>
 
     <main class="main">
-        <section>
-            <div class="moderne--map__title">
-                <h2>ストアリスト</h2>
+        <section class="item--visual">
+            <div class="item--visual__box">
+                <h1 class="item--title">
+                    BLEU MER
+                </h1>
+                <div>&yen; 7,000 (税込)</div>
+                <a href="" class="btn btn--white">購入する</a>
             </div>
-        </section>
-
-        <section class="moderne--map">
-            <div class="moderne--map__stores">
-                <div class="store store1">
-                    <h3>MODERNE MEIEKI</h3>
-                    <p class="store--address">愛知県名古屋市中村区名駅4-27-1</p>
-                    <p class="store--phone">
-                        <i class="im im-phone"></i>
-                        052-551-1001
-                    </p>
-                    <p class="store--time">
-                        <i class="im im-clock-o"></i>
-                        営業時間：10:00-19:00
-                    </p>
-                </div>
-                <div class="store store2">
-                    <h3>MODERNE SHINJUKU</h3>
-                    <p class="store--address">東京都新宿区西新宿1-7−3</p>
-                    <p class="store--phone">
-                        <i class="im im-phone"></i>
-                        033-344-1010
-                    </p>
-                    <p class="store--time">
-                        <i class="im im-clock-o"></i>
-                        営業時間：10:00-19:00
-                    </p>
-                </div>
-                <div class="store store3">
-                    <h3>MODERNE UMEDA</h3>
-                    <p class="store--address">大阪府大阪市北区梅田3-3−1</p>
-                    <p class="store--phone">
-                        <i class="im im-phone"></i>
-                        066-347-0001
-                    </p>
-                    <p class="store--time">
-                        <i class="im im-clock-o"></i>
-                        営業時間：10:00-19:00
-                    </p>
-                </div>
-                <div class="store store4">
-                    <h3>MODERNE PARIS</h3>
-                    <p class="store--address">RETROUVEZ-NOUS AU 128, RUE DE RIVOLI</p>
-                    <p class="store--phone">
-                        <i class="im im-phone"></i>
-                        +33-1-4488-2020
-                    </p>
-                    <p class="store--time">
-                        <i class="im im-clock-o"></i>
-                        営業時間：10:00-19:00
-                    </p>
-                </div>
-            </div>
-
-            <div class="moderne--map__map" id="map">
+            
+            <div class="purchase-popup">
 
             </div>
         </section>
-
-        
     </main>
 
     <footer class="footer">
@@ -164,12 +121,9 @@
 
     <script src="./js/shared.js"></script>
     <script src="./js/wow.min.js"></script>
-    <script src="./js/map.js"></script>
     <script>
         new WOW().init();
     </script>
-    
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDE_NwkMTdCQLu3b_ZH2zMSyM_lAqNZ8u8&callback=initMap" async defer></script>
 </body>
 
 </html>
