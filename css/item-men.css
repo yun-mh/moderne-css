@@ -1,0 +1,335 @@
+body {
+    background-color:#f7f7f7;
+    color: #333;
+}
+
+main {
+    background-image: linear-gradient(232deg, #000000 0%, #000000 43%, #02083a 60%, #243B55 70%, #4b6481 80%, #8296ad 90%, #f7f7f7);
+    padding-bottom: 3rem;
+}
+
+.modal--close {
+    text-align: right;
+    height: 0.8rem;
+}
+
+.modal--close__btn {
+    color: #888;
+}
+
+.modal--close__btn:hover {
+    color: #333;
+    cursor: pointer;
+}
+
+.modal--close__btn:active,
+.modal--close__btn:link,
+.modal--close__btn:visited {
+    color: #888;
+}
+
+.modal--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100% - 2rem);
+}
+
+.modal--item__image {
+    width: 50%;
+    height: 100%;
+}
+
+.modal--item__image img {
+    display: block;
+    height: 100%;
+}
+
+.modal--item__control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    height: 80%;
+    padding: 0 3rem 0 0;
+}
+
+.modal--item__control label {
+    padding-right: 1rem;
+}
+
+.modal--item__type {
+    color: #888;
+    font-size: .8rem;
+    padding-bottom: 2rem;
+}
+
+.modal--item__volume {
+    width: 100%;
+    padding: 1rem 0 0 0;
+}
+
+.modal--item__volume select {
+    display: block;
+    width: 100%;
+    height: 2rem;
+    padding: 0 0 0 0.8rem;
+}
+
+.modal--item__price {
+    padding: 1rem 0 0 0;
+}
+
+.modal--item__quantity {
+    padding: 1rem 0 0 0;
+}
+
+.modal--item__quantity input[type=number] {
+    width: 3rem;
+    height: 2rem;
+    border: 1px solid #888;
+    padding: 0 0 0 0.8rem;
+}
+
+.modal--item__btn {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0 0 0;
+}
+
+.item--visual {
+    height: 76vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: url("../images/men-item.jpg");
+}
+
+.item--visual__box {
+    text-align: center;
+    padding: 5rem;
+}
+
+.item--visual__box div {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 0 1rem 0; 
+}
+
+.item--title {
+    font-size: 4rem;
+    color: white;
+    margin: 0 0 1rem 0;
+}
+
+
+.item--intro {
+    width: 80%;
+    margin: auto;
+    height: 60vh;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.intro--image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: inherit;
+    padding: 2rem;
+}
+
+.intro--image img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.intro--phrase {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: inherit;
+    padding: 2rem;
+    text-align: justify;
+}
+
+.intro--phrase h3 {
+    font-size: 1.4rem;
+}
+
+
+
+.item--notes {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.item--notes__top {
+    height: 20vh;
+    display: flex;
+    border-bottom: 2px dashed #333;
+    justify-content: space-between;
+}
+
+.notes--top {
+    width: 60vh;
+    height: 20vh;
+    line-height: 20vh;
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgba(255,255,255, .7);
+    background-image: linear-gradient(to bottom, rgba(248, 247, 190, .4), rgba(242, 150, 121, .4));
+    clip-path: polygon(50% 0%, 33.3% 100%, 66.6% 100%);
+}
+
+.item--notes__middle {
+    height: 20vh;
+    display: flex;
+    border-bottom: 2px dashed #333;
+    justify-content: space-between;
+}
+
+.notes--middle {
+    width: 60vh;
+    height: 20vh;
+    line-height: 20vh;
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgba(255,255,255, .7);
+    background-image: linear-gradient(to bottom, rgba(242, 150, 121, .4), rgba(211, 134, 166, .4));
+    clip-path: polygon(33.3% 0%, 66.6% 0%, 83.4% 100%, 16.6% 100%);
+}
+
+.item--notes__base {
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.notes--base {
+    width: 60vh;
+    height: 20vh;
+    line-height: 20vh;
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgba(255,255,255, .7);
+    background-image: linear-gradient(to bottom, rgba(211, 134, 166, .4), rgba(162, 161, 201, .4));
+    clip-path: polygon(16.6% 0%, 83.4% 0%, 100% 100%, 0% 100%);
+}
+
+.notes--ingredients {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.notes--ingredients p {
+    color: #f7f7f7;
+}
+
+.notes--ingredients img {
+    border: 1px solid #333;
+}
+
+
+
+.item--features {
+    width: 80%;
+    margin: auto;
+    background-color: #f7f7f7;
+    height: auto;
+}
+
+.item--features__container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    grid-template-rows: 45vh 45vh 45vh;
+    grid-template-areas: "first-img first-exp" "second-exp second-img" "third-img third-exp";
+    justify-content: center;
+    margin: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.feature--first__explanation {
+    grid-area: first-exp;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.feature--first__explanation p {
+    text-align: justify;
+    font-size: 1.2rem;
+    height: inherit;
+    overflow: auto;
+}
+
+.feature--first__image {
+    grid-area: first-img;
+}
+
+.feature--first__image img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.feature--second__image img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.feature--second__explanation {
+    grid-area: second-exp;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.feature--second__explanation p {
+    text-align: justify;
+    display: inline-block;
+    font-size: 1.2rem;
+    height: auto;
+    overflow: auto;
+}
+
+.feature--third__explanation {
+    grid-area: third-exp;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.feature--third__explanation p {
+    text-align: justify;
+    font-size: 1.2rem;
+    height: auto;
+    overflow: auto;
+}
+
+.feature--third__image img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}

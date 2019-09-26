@@ -18,6 +18,12 @@ body {
     color: #333;
 }
 
+.modal_nonscrollable {
+    height: 100vh;
+    overflow-y: hidden;
+    padding-right: 10px;
+}
+
 
 /* ヘッダ(static) */
 .header--nav__static {
@@ -110,7 +116,7 @@ body {
     opacity: 1;
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 100;
     transition: all .2s ease-in;
 }
 
@@ -380,6 +386,7 @@ body {
 }
 
 
+/* ボタン */
 .btn, .btn:link, .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
@@ -417,14 +424,53 @@ body {
     background-color: #fff;
 }
 
+.btn--squared, .btn--squared:link, .btn--squared:visited {
+    display: inline-block;
+    width: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    display: inline-block;
+    transition: all .2s;
+    position: relative;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+  
+.btn--squared:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.btn--squared:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; 
+}
 
+.btn--squared:active, .btn--squared:focus {
+    outline: none;
+    transform: translateY(0px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn--black {
+    background-color: #000;
+    color: white;
+}
+
+.btn--black::after {
+    background-color: #000;
+}
+
+
+/* バックドロップ */
 .backdrop {
     display: none;
     position: fixed;
     opacity: 0;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 200;
     width: 100vw;
     height: 100vh;
     background: rgba(0,0,0,0.5);
@@ -434,23 +480,24 @@ body {
 
 /* モーダル */
 .modal {
+    display: none;
     position: fixed;
     opacity: 0;
-    transform: translateY(-3rem);
     transition: opactity 0.2s ease-out, transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
-    z-index: 200;
-    top: 20%;
-    left: 30%;
-    width: 40%;
+    z-index: 300;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
     background: white;
     padding: 1rem;
     border: 1px solid #ccc;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .modal__title {
     text-align: center;
-    margin: 0 0 1rem 0;
+    margin: 0;
 }
 
 .modal__actions {
@@ -482,4 +529,9 @@ body {
 .modal__action--negative:active {
     background: #ff5454;
     border-color: #ff5454;
+}
+
+.open {
+    display: block !important;
+    opacity: 1 !important;
 }

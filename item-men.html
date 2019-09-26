@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BLEU MER | MODERNE NAGOYA</title>
     <link rel="stylesheet" href="./css/shared.css">
-    <link rel="stylesheet" href="./css/item.css">
+    <link rel="stylesheet" href="./css/item-men.css">
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/iconmonstr-iconic-font.min.css">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
@@ -17,12 +17,43 @@
 <body>
     <div class="backdrop"></div>
     <div class="modal">
-        <h1 class="modal__title">Do you want to continue?</h1>
-        <div class="modal__actions">
-            <a href="start-hosting/index.html" class="modal__action">Yes!</a>
-            <button class="modal__action modal__action--negative" type="button">No!</button>
+        <div class="modal--close">
+            <a class="modal--close__btn">
+                <i class="im im-x-mark"></i>
+            </a>
+        </div>
+        <div class="modal--container">
+            <div class="modal--item__image">
+                <img src="./images/bleu.jpg" alt="ブルーメル">
+            </div>
+            <div class="modal--item__control">
+                <h2 class="modal__title">
+                    モデルン ブルーメル
+                </h2>
+                <div class="modal--item__type">
+                    オードパルファン
+                </div>
+                <div class="modal--item__volume">
+                    <select>
+                        <option value="">50ml</option>
+                        <option value="">100ml</option>
+                    </select>
+                </div>
+                <div class="modal--item__price">
+                    <label>価格</label>
+                    <span><b>7,000円</b>(税込)</span>
+                </div>
+                <div class="modal--item__quantity">
+                    <label>数量</label>
+                    <input type="number" value="1" min="1">
+                </div>
+                <div class="modal--item__btn ">
+                    <a class="btn--squared btn--black">購入する</a>
+                </div>
+            </div>
         </div>
     </div>
+
     <header class="header">
         <nav class="header--nav__static">
             <h1 class="header--nav__logo">
@@ -90,11 +121,110 @@
                     BLEU MER
                 </h1>
                 <div>&yen; 7,000 (税込)</div>
-                <a href="" class="btn btn--white">購入する</a>
+                <a class="btn btn--white purchase">購入する</a>
             </div>
-            
-            <div class="purchase-popup">
+        </section>
 
+        <section class="item--intro">
+            <div class="intro--image">
+                <img src="./images/men-item-intro.jpg" alt="ブルーメルモデル">
+            </div>
+
+            <div class="intro--phrase">
+                <h3>ブルーメル オードパルファン</h3>
+                <p>
+                    魅惑的なアロマティック ウッディ フレグランス。最初はフレッシュに、やがてニューカレドニア産のサンダルウッドがラグジュアリーでインテンスな印象を残します。
+                </p>          
+            </div>
+        </section>
+
+        <section class="item--notes">
+            <div class="item--notes__top">
+                <div class="notes--ingredients">
+                    <div class="notes--images">
+                        <img src="./images/blue mer/top1.jpg" alt="トップ1">
+                        <img src="./images/blue mer/top2.jpg" alt="トップ2">
+                        <img src="./images/blue mer/top3.jpg" alt="トップ3">
+                        <img src="./images/blue mer/top4.jpg" alt="トップ4">
+                    </div>
+                    <p>
+                        レモン、ミント、ピンクペッパー、グレープフルーツ
+                    </p>
+                </div>
+
+                <div class="notes--top">
+                    TOP
+                </div>
+            </div>
+
+            <div class="item--notes__middle">
+                <div class="notes--ingredients">
+                    <div class="notes--images">
+                        <img src="./images/blue mer/middle1.jpg" alt="ミドル1">
+                        <img src="./images/blue mer/middle2.jpg" alt="ミドル2">
+                        <img src="./images/blue mer/middle3.jpg" alt="ミドル3">
+                        <img src="./images/blue mer/middle4.jpg" alt="ミドル4">
+                    </div>
+                    <p>
+                        ショウガ、イソEスーパー、ナツメグ、ジャスミン
+                    </p>
+                </div>
+
+                <div class="notes--middle">
+                    MIDDLE
+                </div>
+            </div>
+
+            <div class="item--notes__base">
+                <div class="notes--ingredients">
+                    <div class="notes--images">
+                        <img src="./images/blue mer/base1.jpg" alt="ベース1">
+                        <img src="./images/blue mer/base2.jpg" alt="ベース2">
+                        <img src="./images/blue mer/base3.jpg" alt="ベース3">
+                        <img src="./images/blue mer/base4.jpg" alt="ベース4">
+                        <img src="./images/blue mer/base5.jpg" alt="ベース5">
+                        <img src="./images/blue mer/base6.jpg" alt="ベース6">
+                    </div>
+                    <p>
+                        ラブダナム、サンダルウッド、パチュリー、ベチバー、お香、杉、ホワイトムスク
+                    </p>
+                </div>
+
+                <div class="notes--base">
+                    BASE
+                </div>
+            </div>
+        </section>
+
+        <section class="item--features">
+            <div class="item--features__container">
+                <div class="feature--first__image">
+                    <img src="./images/men-item-grid1.jpg" alt="ブルーメル1">
+                </div>
+                <div class="feature--first__explanation">
+                    <p>
+                        ブルーのボトルに入った、時代を超越した香り。ブルーメル・オードパルファンは、強い意志のある洗練されたエレガンスを映し出します。
+                    </p>
+                </div>
+                
+                <div class="feature--second__explanation">
+                    <p>
+                        ブルーメル・オードパルファンは、センシュアルなアンバーと柔らかなムスクが合わさったエレガントな アロマティックウッディフレグランス。
+                        温かみがあり包み込まれるようなコンポジション。
+                    </p>
+                </div>
+                <div class="feature--second__image">
+                    <img src="./images/men-item-grid2.jpg" alt="ブルーメル2">
+                </div>
+                
+                <div class="feature--third__image">
+                    <img src="./images/men-item-grid3.jpg" alt="ブルーメル3">
+                </div>
+                <div class="feature--third__explanation">
+                    <p>
+                        ブルーメル・オードパルファンは、既成概念にとらわれず自由に生きる、男性のエスプリを表現したフレグランスです。
+                    </p>
+                </div>
             </div>
         </section>
     </main>
@@ -120,6 +250,7 @@
     </footer>
 
     <script src="./js/shared.js"></script>
+    <script src="./js/item.js"></script>
     <script src="./js/wow.min.js"></script>
     <script>
         new WOW().init();
