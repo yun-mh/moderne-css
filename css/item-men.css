@@ -254,7 +254,7 @@ main {
 .item--features__container {
     width: 80%;
     display: grid;
-    grid-template-columns: 1fr 0.8fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 45vh 45vh 45vh;
     grid-template-areas: "first-img first-exp" "second-exp second-img" "third-img third-exp";
     justify-content: center;
@@ -273,7 +273,6 @@ main {
 
 .feature--first__explanation p {
     text-align: justify;
-    font-size: 1.2rem;
     height: inherit;
     overflow: auto;
 }
@@ -307,7 +306,6 @@ main {
 .feature--second__explanation p {
     text-align: justify;
     display: inline-block;
-    font-size: 1.2rem;
     height: auto;
     overflow: auto;
 }
@@ -322,7 +320,6 @@ main {
 
 .feature--third__explanation p {
     text-align: justify;
-    font-size: 1.2rem;
     height: auto;
     overflow: auto;
 }

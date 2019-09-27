@@ -6,7 +6,7 @@ body {
 .main {
     width: 80%;
     margin: auto;
-}
+}   
 
 .product--list__title h2 {
     text-align: center;
@@ -23,11 +23,11 @@ body {
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 20rem; 
+    height: 23rem; 
 }
 
 .card__side {
-    height: 20rem;
+    height: 23rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -124,7 +124,7 @@ body {
     text-align: right;
     color: #fff;
     position: absolute;
-    top: 13rem;
+    top: 15rem;
     right: 2rem;
     width: 75%; 
 }
