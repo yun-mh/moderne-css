@@ -4,101 +4,12 @@ body {
 }
 
 main {
-    background-image: linear-gradient(to bottom, white, rgba(255, 175, 189, .8), #ffc3a0);
-    /* background-image: linear-gradient(232deg, #000000 0%, #000000 43%, #02083a 60%, #243B55 70%, #4b6481 80%, #8296ad 90%, #f7f7f7); */
+    background-image: linear-gradient(to bottom, rgba(217, 167, 199, .5), rgba(255, 252, 220, .5));
     padding-bottom: 3rem;
 }
 
-.modal--close {
-    text-align: right;
-    height: 0.8rem;
-}
 
-.modal--close__btn {
-    color: #888;
-}
-
-.modal--close__btn:hover {
-    color: #333;
-    cursor: pointer;
-}
-
-.modal--close__btn:active,
-.modal--close__btn:link,
-.modal--close__btn:visited {
-    color: #888;
-}
-
-.modal--container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: calc(100% - 2rem);
-}
-
-.modal--item__image {
-    width: 50%;
-    height: 100%;
-}
-
-.modal--item__image img {
-    display: block;
-    height: 100%;
-}
-
-.modal--item__control {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 50%;
-    height: 80%;
-    padding: 0 3rem 0 0;
-}
-
-.modal--item__control label {
-    padding-right: 1rem;
-}
-
-.modal--item__type {
-    color: #888;
-    font-size: .8rem;
-    padding-bottom: 2rem;
-}
-
-.modal--item__volume {
-    width: 100%;
-    padding: 1rem 0 0 0;
-}
-
-.modal--item__volume select {
-    display: block;
-    width: 100%;
-    height: 2rem;
-    padding: 0 0 0 0.8rem;
-}
-
-.modal--item__price {
-    padding: 1rem 0 0 0;
-}
-
-.modal--item__quantity {
-    padding: 1rem 0 0 0;
-}
-
-.modal--item__quantity input[type=number] {
-    width: 3rem;
-    height: 2rem;
-    border: 1px solid #888;
-    padding: 0 0 0 0.8rem;
-}
-
-.modal--item__btn {
-    width: 100%;
-    text-align: center;
-    padding: 2rem 0 0 0;
-}
-
+/* アイテムビジュアル */
 .item--visual {
     height: 76vh;
     display: flex;
@@ -127,6 +38,7 @@ main {
 }
 
 
+/* アイテム紹介 */
 .item--intro {
     width: 80%;
     margin: auto;
@@ -170,7 +82,7 @@ main {
 }
 
 
-
+/* ノート構成 */
 .item--notes {
     width: 80%;
     margin: auto;
@@ -246,7 +158,7 @@ main {
 }
 
 
-
+/* アイテム特長 */
 .item--features {
     width: 80%;
     margin: auto;

@@ -111,6 +111,7 @@ body {
     color: #333 !important;
 }
 
+/* ヘッダ(float) */
 .header--nav__float {
     position: fixed;
     opacity: 1;
@@ -202,6 +203,7 @@ body {
 }
 
 
+/* ヘッダードロップダウン */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -500,38 +502,97 @@ body {
     margin: 0;
 }
 
-.modal__actions {
-    text-align: center;
-}
-
-.modal__action {
-    border: 1px solid #0e4f1f;
-    background: #0e4f1f;
-    text-decoration: none;
-    color: white;
-    font: inherit;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-}
-
-.modal__action:hover,
-.modal__action:active {
-    background: #2ddf5c;
-    border-color: #2ddf5c;
-}
-
-.modal__action--negative {
-    background: red;
-    border-color: red;
-}
-
-.modal__action--negative:hover,
-.modal__action--negative:active {
-    background: #ff5454;
-    border-color: #ff5454;
-}
-
 .open {
     display: block !important;
     opacity: 1 !important;
+}
+
+.modal--close {
+    text-align: right;
+    height: 0.8rem;
+}
+
+.modal--close__btn {
+    color: #888;
+}
+
+.modal--close__btn:hover {
+    color: #333;
+    cursor: pointer;
+}
+
+.modal--close__btn:active,
+.modal--close__btn:link,
+.modal--close__btn:visited {
+    color: #888;
+}
+
+.modal--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100% - 2rem);
+}
+
+.modal--item__image {
+    width: 50%;
+    height: 100%;
+}
+
+.modal--item__image img {
+    display: block;
+    height: 100%;
+}
+
+.modal--item__control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    height: 80%;
+    padding: 0 3rem 0 0;
+}
+
+.modal--item__control label {
+    padding-right: 1rem;
+}
+
+.modal--item__type {
+    color: #888;
+    font-size: .8rem;
+    padding-bottom: 2rem;
+}
+
+.modal--item__volume {
+    width: 100%;
+    padding: 1rem 0 0 0;
+}
+
+.modal--item__volume select {
+    display: block;
+    width: 100%;
+    height: 2rem;
+    padding: 0 0 0 0.8rem;
+}
+
+.modal--item__price {
+    padding: 1rem 0 0 0;
+}
+
+.modal--item__quantity {
+    padding: 1rem 0 0 0;
+}
+
+.modal--item__quantity input[type=number] {
+    width: 3rem;
+    height: 2rem;
+    border: 1px solid #888;
+    padding: 0 0 0 0.8rem;
+}
+
+.modal--item__btn {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0 0 0;
 }
