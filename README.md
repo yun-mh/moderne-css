@@ -2,6 +2,7 @@
 ## 紹介
 ウェブデザインの演習のために、香水ブランドMODERNE NAGOYA（仮）のウェブページを作ってみました。<br>
 香水ECサイトのため、シンプルながら派手なデザインを実装しようとしました。
+リンク：https://yun-mh.github.io/moderne-css/
 
 ## 構成
 - トップ
@@ -27,6 +28,7 @@ Google Maps APIを活用し、支店のリストと実際のマップを連携�
 ## Intro
 Web Design for Moderne Nagoya, a perfume boutique, as a practice for CSS.<br>
 Tried to make wep pages simple and fancy because Moderne itself is a perfume boutique.
+Link : https://yun-mh.github.io/moderne-css/
 
 ## Structures
 - Top
@@ -52,6 +54,7 @@ Tried to make connections between a branch in the branch list and map data by us
 ## 소개
 웹디자인 연습용으로 가상의 향수 브랜드 MODERNE NAGOYA의 웹페이지를 만들어봤습니다.<br>
 향수 쇼핑사이트인 만큼, 심플하면서도 화려한 디자인을 구현하고자 했습니다.
+링크 : https://yun-mh.github.io/moderne-css/
 
 ## 구성
 - 탑
